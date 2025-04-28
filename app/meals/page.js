@@ -2,7 +2,7 @@ import Link from "next/link";
 import classes from "./page.module.css";
 import { Suspense } from "react";
 
-import Loading from "./loading";
+import MealsLoading from "./loading";
 
 import Meals from "@/components/meals/Meals";
 import { getMeals } from "@/lib/meals";
@@ -26,7 +26,7 @@ export default function MealsPage() {
         </p>
       </header>
       <main className={classes.main}>
-        <Suspense fallback={<Loading />}>
+        <Suspense fallback={<MealsLoading />}>
           <MealsGrid />
         </Suspense>
       </main>

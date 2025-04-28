@@ -1,5 +1,5 @@
-import classes from "./loading.module.css";
+import Loading from "@/components/loading";
 
 export default function MealsLoading() {
-  return <p className={classes.loading}>Fetching meals...</p>;
+  return <Loading loadingText="Fetching meals..." />;
 }
